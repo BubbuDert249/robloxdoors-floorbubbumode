@@ -1,0 +1,11 @@
+set 100 rooms[doorsenabled] [riftenabled] 
+additem to ("rooms A-{random}") item.details
+ name=("Bubbu")
+ getbadge=1 badgetrigger=("fdb")
+ if not getbadge=1 then
+   getbadge=1 set
+ end if then
+item.details end
+encodefrom decimal=109 97 112 100 97 116 97 109 111 100 101 108 32 115 101 116 61 48 49
+get badgetrigger=("fdb") from=badges.rbx
+model return nil; 
